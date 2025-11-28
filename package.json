@@ -12,9 +12,17 @@
   },
   "license": "ISC",
   "author": "s_figueroa",
-  "type": "commonjs",
-  "main": "index.js",
+  "type": "module",
+  "main": "dist/web-components/index.js",
+  "module": "dist/web-components/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:web": "rollup -c",
+    "build:vue2": "node wrappers/vue2/generate.js",
+    "build:vue3": "node wrappers/vue3/generate.js",
+    "build": "npm run build:web && npm run build:vue2 && npm run build:vue3",
+    "publish:lib": "npm publish --access public"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.3"
   }
 }

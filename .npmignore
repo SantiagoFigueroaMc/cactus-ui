@@ -1,0 +1,14 @@
+# Source files (not needed in published package)
+src/
+wrappers/
+rollup.config.js
+
+# Development files
+.git/
+.gitignore
+.DS_Store
+.vscode/
+.idea/
+node_modules/
+
+# Only include dist/ in the package

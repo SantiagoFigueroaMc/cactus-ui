@@ -1,0 +1,20 @@
+{
+  "name": "@s_figueroa/cactus-ui",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/SantiagoFigueroaMc/cactus-ui#readme",
+  "bugs": {
+    "url": "https://github.com/SantiagoFigueroaMc/cactus-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantiagoFigueroaMc/cactus-ui.git"
+  },
+  "license": "ISC",
+  "author": "s_figueroa",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
